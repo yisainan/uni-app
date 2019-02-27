@@ -5,4 +5,6 @@
 
 my-hello-uniapp 根据 [地址](https://uniapp.dcloud.io/quickstart) 进行创建
 
-hello-uniapp 来自 [地址](https://github.com/dcloudio/hello-uniapp) 
+hello-uniapp 来自官方仓库 https://github.com/dcloudio/hello-uniapp
+
+uni-app 来自官方仓库 https://github.com/dcloudio/uni-app
