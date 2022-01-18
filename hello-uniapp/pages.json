@@ -2,7 +2,7 @@
     "pages" : [
         // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
         {
-            "path" : "pages/tabBar/component/component",
+            "path" : "pages/test/mytest",
             "style" : {
                 "navigationBarTitleText" : "组件",
                 "app-plus" : {
@@ -657,14 +657,14 @@
 						"navigationBarTitleText" : "导航栏带红点和角标",
 						"app-plus": {
 							"titleNView": {
-								"buttons": [ 
+								"buttons": [
 									{
-										"text": "消息", 
+										"text": "消息",
 										"fontSize": "14",
 										"redDot": true
 									},
 									{
-										"text": "关注", 
+										"text": "关注",
 										"fontSize": "14",
 										"badgeText": "12"
 									}
@@ -689,7 +689,7 @@
 									"fontSize": "28px",
 									"color":"#fff",
 									"background": "rgba(0,0,0,0)"
-								
+
 								}],
 								"searchInput": {
 									"backgroundColor": "#fff",
