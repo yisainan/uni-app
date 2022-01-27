@@ -5,14 +5,16 @@
 		这是子组件传递过来的数据{{num}}
 		<test-a></test-a>
 		<test-b></test-b>
-		<uni-calendar 
-			:insert="true"
-			:lunar="true" 
-			:start-date="'2019-3-2'"
-			:end-date="'2019-5-20'"
-			@change="change"
-			 >
-		</uni-calendar>
+		<!-- 这是教程中的写法 -->
+		<!-- <uni-calendar :insert="true" :lunar="true" :start-date="'2019-3-2'" :end-date="'2019-5-20'" @change="change">
+		</uni-calendar> -->
+		<view>
+			<uni-calendar :insert="true" :lunar="true" :start-date="'2019-3-2'" :end-date="'2019-5-20'"
+				@change="change" />
+		</view>
+		<uni-card title="基础卡片" extra="额外信息">
+			<text>这是一个基础卡片示例，此示例展示了一个标题加标题额外信息的标准卡片。</text>
+		</uni-card>
 	</view>
 </template>
 
@@ -20,7 +22,7 @@
 	import test from '../../components/test.vue'
 	import testA from '../../components/a.vue'
 	import testB from '../../components/b.vue'
-	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
+	// import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	export default {
 		data() {
 			return {
@@ -30,34 +32,34 @@
 			}
 		},
 		onLoad(options) {
-			console.log('页面加载了',options)
+			console.log('页面加载了', options)
 		},
 		onShow() {
 			console.log('页面显示了')
 		},
-		onReady(){
+		onReady() {
 			console.log('页面初次渲染完成了')
 		},
 		onHide() {
 			console.log('页面隐藏了')
 		},
 		methods: {
-			checkTest () {
+			checkTest() {
 				this.flag = !this.flag
 			},
-			getNum (num) {
+			getNum(num) {
 				console.log(num)
 				this.num = num
 			},
 			change(e) {
-				console.log('出发了change',e)
+				console.log('出发了change', e)
 			}
 		},
 		components: {
 			test,
 			"test-a": testA,
 			"test-b": testB,
-			uniCalendar
+			// uniCalendar
 		}
 	}
 </script>

@@ -79,9 +79,9 @@
             },
             "splashscreen" : {
                 "android" : {
-                    "hdpi" : "C:/Users/destiny/Desktop/uniapp课程/素材/bz.png",
-                    "xhdpi" : "C:/Users/destiny/Desktop/uniapp课程/素材/bz.png",
-                    "xxhdpi" : "C:/Users/destiny/Desktop/uniapp课程/素材/bz.png"
+                    "hdpi" : "/Users/qilei/code/uni-app/Uni-App从入门到实战-黑马程序员杭州校区出品/素材/bz.png",
+                    "xhdpi" : "/Users/qilei/code/uni-app/Uni-App从入门到实战-黑马程序员杭州校区出品/素材/bz.png",
+                    "xxhdpi" : "/Users/qilei/code/uni-app/Uni-App从入门到实战-黑马程序员杭州校区出品/素材/bz.png"
                 }
             }
         }
@@ -90,9 +90,9 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wx6d8be68bfb6cb5fc",
+        "appid" : "wxed49dc74a6810d93",
         "setting" : {
-            "urlCheck" : false
+            "urlCheck" : true
         },
         "usingComponents" : true,
         "permission" : {}
