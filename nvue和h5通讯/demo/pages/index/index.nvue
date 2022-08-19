@@ -1,0 +1,45 @@
+<template>
+	<view class="content">
+		<web-view src="http://172.20.61.27:8080?id=123" @onPostMessage="onPostMessage" :style="{width: winWidth + 'px', height: winHeight + 'px'}"></web-view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				title: 'Hello',
+				winWidth: uni.getSystemInfoSync().windowWidth,
+				winHeight: uni.getSystemInfoSync().windowHeight
+			}
+		},
+		onLoad() {
+			console.log("执行了");
+		},
+		methods: {
+			onPostMessage(e) {
+				console.log("接收h5传递过来的参数为：",e.detail);
+				// 存值
+				if (e.detail.data[0].setStorage) {
+					uni.setStorageSync(e.detail.data[0].setStorage.key, e.detail.data[0].setStorage.value);
+					// uni.setStorage({
+					// 	key: 'storage_key',
+					// 	data: 'hello',
+					// 	success: function () {
+					// 		console.log('success');
+					// 	}
+					// });
+				}
+				// 取值
+				if (e.detail.data[0].getStorage) {
+					uni.getStorageSync(e.detail.data[0].getStorage.key);
+					console.log(uni.getStorageSync(e.detail.data[0].getStorage.key));
+				}
+			}
+		}
+	}
+</script>
+
+<style>
+
+</style>

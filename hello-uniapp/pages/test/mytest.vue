@@ -1,8 +1,8 @@
 <template>
     <view class="uni-padding-wrap">
-       123wwww
-       
-       <web-view :webview-styles="webviewStyles" src="https://uniapp.dcloud.io/static/web-view.html"></web-view>
+        123wwww
+
+        <web-view :webview-styles="webviewStyles" src="https://uniapp.dcloud.io/static/web-view.html"></web-view>
     </view>
 </template>
 
@@ -11,11 +11,11 @@
         data() {
             return {
                 title: 'tababr',
-webviewStyles: {
+                webviewStyles: {
                     progress: {
                         color: '#FF3333'
                     }
-                }                
+                }
 
             }
         },
